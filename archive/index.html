@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Archive</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+<div class="nav">
+  <div class="container">
+    <div class="nav-inner">
+      <a class="brand" href="../index.html">PLAYTE <small>studio</small></a>
+      <div class="menu">
+        <a class="active" href="index.html">Archive</a>
+        <a href="../end.html">Recovered Links</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="section">
+    <div class="kicker">Leak Archive</div>
+    <h1 style="margin:10px 0 6px">Recovered files</h1>
+    <p class="h-sub">Swap these cases with your easy puzzles. Keep it 3–5 minutes total.</p>
+
+    <div class="card">
+      <div class="filelist">
+        <a href="#case1"><span>CASE-001 · Prototype Overview</span><span class="tag">easy</span></a>
+        <a href="#case2"><span>CASE-002 · Components</span><span class="tag">easy</span></a>
+        <a href="#case3"><span>CASE-003 · Marketing Leak</span><span class="tag">easy</span></a>
+      </div>
+      <p class="helper">You can also split puzzles across multiple pages if you want.</p>
+    </div>
+
+    <div class="hr"></div>
+
+    <div id="case1" class="card">
+      <div class="kicker">CASE-001</div>
+      <h3>Prototype Overview</h3>
+      <p class="inline-note">Puzzle goes here: <strong>[[PUZZLE_1]]</strong></p>
+      <p class="helper">Replace <code>[[PUZZLE_1]]</code> with your content.</p>
+    </div>
+
+    <div id="case2" class="card" style="margin-top:14px">
+      <div class="kicker">CASE-002</div>
+      <h3>Components</h3>
+      <p class="inline-note">Puzzle goes here: <strong>[[PUZZLE_2]]</strong></p>
+      <p class="helper">Replace <code>[[PUZZLE_2]]</code>.</p>
+    </div>
+
+    <div id="case3" class="card" style="margin-top:14px">
+      <div class="kicker">CASE-003</div>
+      <h3>Marketing Leak</h3>
+      <p class="inline-note">Puzzle goes here: <strong>[[PUZZLE_3]]</strong></p>
+      <p class="helper">Replace <code>[[PUZZLE_3]]</code>.</p>
+      <div class="hr"></div>
+      <a class="btn primary" href="../end.html">Finish → Recovered links</a>
+    </div>
+  </div>
+</div>
+
+<div class="container"><div class="footer">
+  <div>Archive session id: <span class="glitch" data-glitch="APR1">APR1</span></div>
+</div></div>
+
+<div id="toast" class="toast" aria-live="polite"></div>
+<script src="../assets/js/app.js"></script>
+<script src="../assets/js/unlock.js"></script>
+<script>
+  // Guard: if not unlocked, bounce to portal
+  if(localStorage.getItem("apr1_unlocked") !== "true"){
+    window.location.href = "../portal.html";
+  }
+</script>
+</body>
+</html>

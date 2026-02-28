@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Partner Login — PLAYTE</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<div class="nav">
+  <div class="container">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">PLAYTE <small>studio</small></a>
+      <div class="menu">
+        <a class="" href="index.html">Home</a>
+        <a class="" href="about.html" data-sus="1">About</a>
+        <a class="" href="products.html">Products</a>
+        <a class="" href="news.html">News</a>
+        <a class="" href="contact.html">Contact</a>
+        <a class="active" href="portal.html">Partner Login</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="section portal-wrap">
+    <div class="kicker">Partner Login</div>
+    <h1 style="margin:10px 0 6px">Authorized access only</h1>
+    <p class="h-sub">Enter the access key recovered from the public site.</p>
+
+    <div class="card">
+      <form id="portalForm">
+        <input id="accessKey" class="input" placeholder="Access key (e.g. 0401)" autocomplete="off" />
+        <div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap">
+          <button class="btn primary" type="submit">Unlock</button>
+          <a class="btn ghost" href="index.html">Back</a>
+        </div>
+        <div id="portalError" class="error">Invalid key. Try again.</div>
+        <div id="portalOk" class="success">Access granted. Redirecting…</div>
+      </form>
+      <p class="helper">Change the key in <code>assets/js/unlock.js</code> (ACCESS_KEY).</p>
+    </div>
+
+    <div class="card" style="margin-top:14px">
+      <div class="kicker">Note</div>
+      <p class="inline-note">
+        This is a playful April 1st experience. Do not put real secrets here.
+      </p>
+    </div>
+  </div>
+</div>
+<script src="assets/js/unlock.js"></script>
+
+<div class="container"><div class="footer">
+  <div>© 2026 PLAYTE — build <span class="glitch" data-glitch="APR1">APR1</span> · <a class="small-link" href="404.html">help</a></div>
+  <div class="inline-note">Not real security. Just a playful April 1st experience.</div>
+</div></div>
+<div id="toast" class="toast" aria-live="polite"></div>
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>
