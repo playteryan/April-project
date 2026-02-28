@@ -1,17 +1,10 @@
 /**
- * Edit this ONE line to change the access key.
+ * Change this to your access key.
  * NOTE: This is for "experience" (not real security).
  */
 const ACCESS_KEY = "0401";
 
 (function(){
-  // Allow friends to enter archive directly if already unlocked
-  const unlocked = localStorage.getItem("apr1_unlocked") === "true";
-  const guard = document.querySelector("[data-guard]");
-  if(guard){
-    guard.classList.toggle("hidden", !unlocked);
-  }
-
   const form = document.getElementById("portalForm");
   if(!form) return;
 
@@ -35,8 +28,3 @@ const ACCESS_KEY = "0401";
     }
   });
 })();
-
-function markClueFound(){
-  // Call this when you reveal any clue to gently unlock the portal hint
-  localStorage.setItem("apr1_any_clue", "true");
-}

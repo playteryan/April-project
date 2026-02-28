@@ -1,20 +1,19 @@
-# PLAYTE APR1 Starter (No-code friendly)
+# PLAYTE APR1 site (ready-to-upload)
 
-This is a starter kit for a "normal-looking company website" that slowly becomes suspicious,
-then reveals a playful Portal + Leak Archive (escape-room style).
+This zip is a complete GitHub Pages site:
+- responsive
+- fancy scroll reveal
+- mobile drawer menu
+- home hero video embed already set
 
-## What you edit (90% of the work)
-- Replace text placeholders like [[CLUE_1]] , [[PUZZLE_1]] , [[INSTAGRAM_URL]]
-- Replace images inside `assets/img/`
-- Change the access key in `assets/js/unlock.js` (ACCESS_KEY)
-
-## Easiest image workflow
-1) Put your image in `assets/img/`
-2) Keep the same file name used in the page (or update the `src` in HTML)
-
-## GitHub Pages
-- Ensure `index.html` is at the repo root.
-- Enable Settings → Pages → Deploy from branch (main / root).
-
-## Safety
-This is NOT real security. Do not store real secrets.
+## What you edit
+- Replace images in `assets/img/` (keep the same filenames):
+  - game_01.jpg ~ game_06.jpg
+  - about_01.jpg
+  - leak.jpg
+- Change access key in `assets/js/unlock.js` (ACCESS_KEY)
+- Replace placeholders:
+  - [[CLUE_1]] [[CLUE_2]] [[CLUE_3]] [[CLUE_4]]
+  - [[P1]]..[[P4]]
+  - [[PUZZLE_1]]..[[PUZZLE_3]]
+  - [[INSTAGRAM_URL]] [[EBAY_URL]] [[AMAZON_URL]]

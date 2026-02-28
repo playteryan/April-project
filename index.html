@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>PLAYTE — studio</title>
+  <title>PLAYTE — Home</title>
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
@@ -12,6 +12,7 @@
   <div class="container">
     <div class="nav-inner">
       <a class="brand" href="index.html">PLAYTE <small>studio</small></a>
+
       <div class="menu">
         <a class="active" href="index.html">Home</a>
         <a class="" href="about.html" data-sus="1">About</a>
@@ -20,7 +21,36 @@
         <a class="" href="contact.html">Contact</a>
         <a class="" href="portal.html">Partner Login</a>
       </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none">
+          <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
     </div>
+  </div>
+</div>
+
+<div class="drawer-overlay" id="drawerOverlay"></div>
+<div class="drawer" role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="drawer-top">
+    <div class="brand">PLAYTE <small>studio</small></div>
+    <button class="hamburger" id="drawerClose" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" fill="none">
+        <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </div>
+  <div class="drawer-links">
+    <a class="active" href="index.html">Home</a>
+    <a class="" href="about.html">About</a>
+    <a class="" href="products.html">Products</a>
+    <a class="" href="news.html">News</a>
+    <a class="" href="contact.html">Contact</a>
+    <a class="" href="portal.html">Partner Login</a>
+  </div>
+  <div style="margin-top:auto;padding-top:12px" class="inline-note">
+    build <span class="glitch" data-glitch="APR1">APR1</span>
   </div>
 </div>
 
@@ -28,43 +58,107 @@
 <div class="container">
   <div class="hero">
     <div class="hero-grid">
-      <div>
+      <div class="reveal-on-scroll">
         <div class="badge">Independent board game studio · Seoul</div>
-        <h1 class="h-title">We make games people talk about.</h1>
+        <h1 class="h-title">A vast playte to play</h1>
         <p class="h-sub">
-          Clear rules. Strong table presence. And a reason to play “one more time.”
-          <span class="glitch" data-glitch="(internal)"> </span>
+          Clear rules. Strong table presence. One more play. <em>(Everything is normal here.)</em>
         </p>
         <div class="actions">
           <a class="btn primary" href="products.html">Explore games</a>
-          <a class="btn ghost" href="about.html">About the studio</a>
+          <a class="btn ghost" href="portal.html">Access portal</a>
         </div>
-        <p class="inline-note">Tip: this site gets… slightly stranger the longer you stay.</p>
+        <p class="inline-note">Scroll… it slowly gets suspicious.</p>
       </div>
-      <div class="card">
-        <div class="kicker">Featured</div>
-        <h3>Spring Drop</h3>
-        <p>Replace this card image: <code>assets/img/hero.jpg</code></p>
+
+      <div class="card reveal-on-scroll reveal-right">
+        <div class="kicker">Home hero media</div>
+        <h3 style="margin-top:10px">Trailer</h3>
         <div class="hr"></div>
-        <p class="inline-note">Placeholder image file created: <code>assets/img/hero.jpg</code></p>
+
+        <div class="media">
+          <iframe
+            src="https://www.youtube.com/embed/ENSdrYZlOUc"
+            title="PLAYTE trailer"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+
+        <p class="helper">Want local MP4 instead? I can switch this block to &lt;video&gt; with a fixed filename.</p>
       </div>
     </div>
   </div>
 
   <div class="section">
-    <div class="kicker">Why partners choose us</div>
+    <div class="kicker reveal-on-scroll">Featured games</div>
     <div class="grid-3" style="margin-top:12px">
-      <div class="card">
+      <div class="card reveal-on-scroll reveal-left">
+        <h3>Gachapon Trick</h3>
+        <div class="media" style="margin-top:10px">
+          <img src="assets/img/game_01.jpg" alt="Gachapon Trick cover" loading="lazy">
+        </div>
+        <p style="margin-top:10px">Outplay rivals in trick-taking and collect every cool figurine.</p>
+      </div>
+
+      <div class="card reveal-on-scroll">
+        <h3>Orapa Space</h3>
+        <div class="media" style="margin-top:10px">
+          <img src="assets/img/game_02.jpg" alt="Orapa Space cover" loading="lazy">
+        </div>
+        <p style="margin-top:10px">Fire lasers, read the signals, and deduce planets’ states.</p>
+      </div>
+
+      <div class="card reveal-on-scroll reveal-right">
+        <h3>Pensterdam</h3>
+        <div class="media" style="margin-top:10px">
+          <img src="assets/img/game_03.jpg" alt="Pensterdam cover" loading="lazy">
+        </div>
+        <p style="margin-top:10px">A daily puzzle calendar—discover city views, one day at a time.</p>
+      </div>
+    </div>
+
+    <div class="grid-3" style="margin-top:16px">
+      <div class="card reveal-on-scroll reveal-left">
+        <h3>Gouda! Gouda!</h3>
+        <div class="media" style="margin-top:10px">
+          <img src="assets/img/game_04.jpg" alt="Gouda! Gouda! cover" loading="lazy">
+        </div>
+        <p style="margin-top:10px">Roll dice, race your mice, and steal cheese—simple, never easy.</p>
+      </div>
+
+      <div class="card reveal-on-scroll">
+        <h3>Meow Meow Dice</h3>
+        <div class="media" style="margin-top:10px">
+          <img src="assets/img/game_05.jpg" alt="Meow Meow Dice cover" loading="lazy">
+        </div>
+        <p style="margin-top:10px">Yacht dice with cats—build combos and become the richest cat.</p>
+      </div>
+
+      <div class="card reveal-on-scroll reveal-right">
+        <h3 class="glitch" data-glitch="(Quarantined)">Meow 10</h3>
+        <div class="media" style="margin-top:10px">
+          <img src="assets/img/game_06.jpg" alt="Meow 10 cover" loading="lazy">
+        </div>
+        <p style="margin-top:10px">Send out 10 mischievous cats. Everything is normal here.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="kicker reveal-on-scroll">Why partners choose us</div>
+    <div class="grid-3" style="margin-top:12px">
+      <div class="card reveal-on-scroll reveal-left">
         <h3>Table-first design</h3>
-        <p>Every component is made to be handled, read, and remembered.</p>
+        <p>Components that are handled, read, and remembered.</p>
       </div>
-      <div class="card">
-        <h3>Clean learning curve</h3>
-        <p>We optimize for “first play joy,” then layer depth.</p>
+      <div class="card reveal-on-scroll">
+        <h3>Clear rules, fast onboarding</h3>
+        <p>Explain in minutes, then let depth emerge through play.</p>
       </div>
-      <div class="card">
+      <div class="card reveal-on-scroll reveal-right">
         <h3>International-ready</h3>
-        <p>We plan icons, layouts, and localization from day one.</p>
+        <p>Icons and layouts built for localization from day one.</p>
       </div>
     </div>
   </div>

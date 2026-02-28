@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About — PLAYTE</title>
+  <title>PLAYTE — About</title>
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
@@ -12,6 +12,7 @@
   <div class="container">
     <div class="nav-inner">
       <a class="brand" href="index.html">PLAYTE <small>studio</small></a>
+
       <div class="menu">
         <a class="" href="index.html">Home</a>
         <a class="active" href="about.html" data-sus="1">About</a>
@@ -20,37 +21,73 @@
         <a class="" href="contact.html">Contact</a>
         <a class="" href="portal.html">Partner Login</a>
       </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none">
+          <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
     </div>
+  </div>
+</div>
+
+<div class="drawer-overlay" id="drawerOverlay"></div>
+<div class="drawer" role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="drawer-top">
+    <div class="brand">PLAYTE <small>studio</small></div>
+    <button class="hamburger" id="drawerClose" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" fill="none">
+        <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </div>
+  <div class="drawer-links">
+    <a class="" href="index.html">Home</a>
+    <a class="active" href="about.html">About</a>
+    <a class="" href="products.html">Products</a>
+    <a class="" href="news.html">News</a>
+    <a class="" href="contact.html">Contact</a>
+    <a class="" href="portal.html">Partner Login</a>
+  </div>
+  <div style="margin-top:auto;padding-top:12px" class="inline-note">
+    build <span class="glitch" data-glitch="APR1">APR1</span>
   </div>
 </div>
 
 
 <div class="container">
   <div class="section">
-    <div class="kicker">About</div>
-    <h1 style="margin:10px 0 6px">A small team obsessed with delightful systems.</h1>
-    <p class="h-sub" style="max-width:70ch">
+    <div class="kicker reveal-on-scroll">About</div>
+    <h1 class="reveal-on-scroll" style="margin:10px 0 6px">A small team obsessed with delightful systems.</h1>
+    <p class="h-sub reveal-on-scroll" style="max-width:70ch">
       We build games with a strong hook, crisp rules, and a little bit of surprise.
       If you're reading carefully… you'll notice we like leaving trails.
     </p>
-    <div class="hr"></div>
 
-    <div class="card">
-      <div class="kicker">Timeline</div>
-      <div style="margin-top:10px;display:grid;gap:10px">
-        <div><strong>2022</strong> — Studio formed. First international shows.</div>
-        <div><strong>2023</strong> — Distribution pilots. Localization pipeline.</div>
-        <div><strong>2024</strong> — Rapid prototyping sprint.</div>
-        <div><strong>2025</strong> — Partner network expansion.</div>
-        <div><strong>2026</strong> — <span class="redacted" data-reveal="[[CLUE_1]]" onclick="markClueFound()">REDACTED</span>
-          <span class="inline-note"> (click)</span>
+    <div class="grid-2" style="margin-top:14px">
+      <div class="card reveal-on-scroll reveal-left">
+        <div class="kicker">Studio</div>
+        <div class="media" style="margin-top:10px">
+          <img src="assets/img/about_01.jpg" alt="Studio photo" loading="lazy">
         </div>
+        <p style="margin-top:10px">Replace <code>assets/img/about_01.jpg</code></p>
       </div>
-      <p class="helper">Replace <code>[[CLUE_1]]</code> with your first clue fragment.</p>
+      <div class="card reveal-on-scroll reveal-right">
+        <div class="kicker">Timeline</div>
+        <div style="margin-top:10px;display:grid;gap:10px">
+          <div><strong>2022</strong> — Studio formed. First international shows.</div>
+          <div><strong>2023</strong> — Distribution pilots. Localization pipeline.</div>
+          <div><strong>2024</strong> — Rapid prototyping sprint.</div>
+          <div><strong>2025</strong> — Partner network expansion.</div>
+          <div><strong>2026</strong> — <span class="redacted" data-reveal="[[CLUE_1]]">REDACTED</span>
+            <span class="inline-note"> (click)</span>
+          </div>
+        </div>
+        <p class="helper">Replace <code>[[CLUE_1]]</code> with your first clue fragment.</p>
+      </div>
     </div>
   </div>
 </div>
-<script src="assets/js/unlock.js"></script>
 
 <div class="container"><div class="footer">
   <div>© 2026 PLAYTE — build <span class="glitch" data-glitch="APR1">APR1</span> · <a class="small-link" href="404.html">help</a></div>
